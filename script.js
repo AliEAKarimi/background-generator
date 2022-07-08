@@ -10,8 +10,7 @@ function setGradient(firstColor=color1.value, secondColor=color2.value){
     + ", "
     + secondColor
     + ")";
-    //css.textContent = body.style.background + ";";
-    css.appendChild(document.createTextNode(body.style.background + ";"));
+    css.textContent = body.style.background + ";";
 }
 
 function createRandomColor() {
