@@ -9,10 +9,11 @@ function setGradient(){
     + ", "
     + color2.value
     + ")";
-    css.textContent = body.style.background + ";";
+    //css.textContent = body.style.background + ";";
+    css.appendChild(document.createTextNode(body.style.background + ";"));
 }
 
-window.addEventListener("load", setGradient);
+setGradient();
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 
